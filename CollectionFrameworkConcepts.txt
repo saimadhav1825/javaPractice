@@ -1,0 +1,216 @@
+Collections Framework
+
+homegenous data means single data type values store
+hetrogenous data means different  data type values store
+collection interfcace extends Iterable interfcace
+                                                          
+collection interfcace is the base interfcace of collection
+
+collection interfcace methods
+1.add
+2.addAll
+3.remove
+4.removeAll
+5.size
+6.isEmpty
+7.contains
+8.clear
+9.containsAll
+10.retainsAll
+11.toArray
+
+List interfcace extends collection interfcace
+1.duplicate elements are allowed
+2.insertion order is preserved
+
+List interfcace methods
+1.add(index,Object)
+1.addAll(index,Collection)
+3.remove(index)
+4.get(index)
+5.set(index,Object)
+
+
+list interfcace useses these classes
+1.ArrayList
+2.linkedList
+3.vector
+4.stack
+
+
+ArrayList implements list interfcace
+
+ArrayList we can use mainly for retriving data,if we have more inserting and deleting then arraylist is not good to use why because shifting position will take time
+1.duplicate value are allowed
+2.insertion order is preserved
+3.null value are also allowed
+
+some methods in arraylist
+1.add(index,Object)
+1.addAll(index,Collection)
+3.remove(index)
+4.get(index)
+5.set(index,Object)
+
+ArrayList by default 10 locations will create
+
+
+LinkedList implements list interfcace,Dequeue interfcace
+
+LinkedList we can use mainly for inserting and deleting,not for retriving data
+in linkedlist retriving operation will start from first elements and from where we access particular position,
+so retriving data is will take time in linkedList when compared to arraylist
+
+some methods in linkedList
+1.add(index,Object)
+1.addAll(index,Collection)
+3.remove(index)
+4.get(index)
+5.set(index,Object)
+addional methods
+1.addfirst
+2.addLast
+3.removeLast
+4.removeFirst
+5.getFirst
+6.getLast
+
+
+1.duplicate value are allowed
+2.insertion order is preserved
+3.null value are also allowed
+4.linkedList internally follows doublylinkedlist
+5.hetrogenous data allowed
+
+Stack
+-stack mainly for first in last out(FILO)
+
+
+Set interfcace extends collection interfcace
+1.insertion order not preserved
+2.duplicate are not allowed
+
+index is not there in set
+
+Set interfcace useses these classes
+1.hashset
+2.linkedhashset
+
+
+some methods in set interfcace
+1.add(Object)
+2.remove(Object)
+3.addAll(Collection)
+4.removeAll(Collection)
+5.isEmpty
+6.contains(Object)
+
+Hashset class
+1.insertion order not preserved and elements stored in random order
+2.duplicate are not allowed
+3.insert elements by using concept called hasecode
+4.hetrogenous data we can add
+5.null value are allowed
+
+internally follows hashtable 
+
+mostly hashset use for searching operations
+
+hashset internally default 16 size 
+load factor is 0.75 by default
+
+LinkedHashSet
+1.insertion order is  preserved and elements stored in random order
+2.duplicate are not allowed
+3.insert elements by using concept called hasecode
+4.hetrogenous data we can add
+5.null value are allowed
+
+
+internally follows hashtable and linkedList
+
+Queue interfcace extends collection interfcace
+1.queue is used for priority for process(FIFO)
+
+queue interfcace useses these classes
+1.priority Queue
+2.LinkedList
+
+Interface
+Dequeue
+BlockingQueue
+BlockingDeQueue
+
+PriorityQueue class
+1.duplicate value are allowed
+2.insertion order is preserved
+3.null value are also allowed
+4.linkedList internally follows doublylinkedlist
+5.homegenous data allowed and hetrogenous data not allowed
+
+SomeMethods
+1.add()
+2.offer()
+3.element()
+4.peek()
+5.remove()
+6.poll()
+
+
+Dequeue interfcace extends Queue interfcace
+
+
+
+
+
+Map and HashMap
+
+Map interfcace is not part of collection interfcace
+1.it will store value in key value pair
+2.duplicate keys are not allowed
+3.duplicate values are allowed
+
+map interfcace useses these classes
+1.hashmap
+2.linked hashmap
+3.hashtable
+
+
+HashMap class
+internally data structure is hashtable
+insertion order not preserved
+duplicate keys not allowed
+duplicate value are allowed
+null key allewed once
+duplicate null values are allowed
+hetrogenous data are allowed
+
+some methods
+1.put(key,value)
+2.putAll(MapList)
+3.get(key)
+4.remove(key)
+5.isEmpty
+6.containkey(key)
+7.containValue(value)
+8.keySet() return Set object
+9.values() return Collection
+10.entrySet() return Set object
+
+HashTable
+internally data structure is hashtable
+insertion order not preserved
+duplicate keys not allowed
+duplicate value are allowed
+null key not allowed
+duplicate null values are not allowed
+hetrogenous data are allowed
+
+difference between hashmap and hashtable
+
+hashmap                                                     hashtable
+1.not synchrozined                                         synchrozined
+2.not thread safe                                          thread safe
+3.mutiple threads allowed                                  mutiple threads not allowed
+4.performance faster                                       performance low
+5.null key allowed once                                    null key not allowed
